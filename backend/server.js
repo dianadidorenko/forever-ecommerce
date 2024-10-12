@@ -18,6 +18,18 @@ connectCloudinary();
 app.use(express.json());
 app.use(cors());
 
+// Настройка CORS
+const corsOptions = {
+  origin: [
+    "https://forever-admin-black.vercel.app",
+    "https://forever-ecommerce-dusky.vercel.app",
+    "https://forever-frontend-ebon.vercel.app/cart",
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
 // Api endpoints
 app.use("/api/user", userRouter);
 app.use("/api/product", productRouter);
