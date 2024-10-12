@@ -22,8 +22,8 @@ app.use(cors());
 const corsOptions = {
   origin: [
     "https://forever-admin-black.vercel.app",
-    "https://forever-ecommerce-dusky.vercel.app",
-    "https://forever-frontend-ebon.vercel.app/cart",
+    "https://forever-backend-dusky.vercel.app",
+    "https://forever-frontend-ebon.vercel.app",
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
